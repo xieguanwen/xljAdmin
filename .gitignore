@@ -1,0 +1,7 @@
+/.idea/
+/crispy_forms/
+/mptt/
+/xadmin/
+/ckeditor/
+/logging/
+*.pyc
