@@ -39,7 +39,6 @@ ALLOWED_HOSTS = '*'
 # although not all choices may be available on all operating systems.
 # In a Windows environment this must be set to your system time zone.
 LANGUAGE_CODE = 'zh_CN'
-
 TIME_ZONE = 'Asia/Shanghai'
 
 LANGUAGES = (
