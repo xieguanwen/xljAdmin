@@ -88,9 +88,9 @@ STATICFILES_DIRS = (
     '/data/www/xljAdmin/xiaolajiao/static',
 )
 
-# LOCALE_PATHS = (
-#     '/data/www/xljAdmin/locale',
-# )
+LOCALE_PATHS = (
+    '/data/www/xljAdmin/locale',
+)
 
 # List of finder classes that know how to find static files in
 # various locations.
@@ -107,7 +107,7 @@ SECRET_KEY = '2fbj7g&-rnx+l^(3mp7)o@ng$fr+@qtsg&&w5_7trn2qtzxus_'
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
-    'django.template.context_processors.i18n',
+    # 'django.template.context_processors.i18n',
     #     'django.template.loaders.eggs.Loader',
 )
 
