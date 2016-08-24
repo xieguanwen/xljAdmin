@@ -88,9 +88,9 @@ STATICFILES_DIRS = (
     '/data/www/xljAdmin/xiaolajiao/static',
 )
 
-# LOCALE_PATHS = (
-#     '/data/www/xljAdmin/locale',
-# )
+LOCALE_PATHS = (
+    '/data/www/xljAdmin/locale',
+)
 
 # List of finder classes that know how to find static files in
 # various locations.
