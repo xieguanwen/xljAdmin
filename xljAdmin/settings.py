@@ -22,9 +22,9 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'xljAdmin',
-        'USER': 'rich',
-        'PASSWORD': '123456',
+        'NAME': 'xiaolajiao',
+        'USER': 'xiaolajiao',
+        'PASSWORD': 'xiaolajiao',
         'HOST': '192.168.1.219',
         'PORT': '3306',
     }
