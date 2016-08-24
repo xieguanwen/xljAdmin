@@ -134,9 +134,11 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
-    'xadmin',
     'crispy_forms',
     'ckeditor',
+    'xadmin',
+    'xiaolajiao.admin.logistics',
+    'xiaolajiao.admin.order',
     # 'api',
 )
 TEMPLATE_DIRS = (

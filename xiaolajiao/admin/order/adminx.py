@@ -11,4 +11,4 @@ class OrderInfoAdmin(object):
     list_search = ('order_sn')
     relfield_style = 'fk-ajax'
 
-xadmin.site.register(OrderInfo,OrderInfoAdmin);
+xadmin.site.register(OrderInfo,OrderInfoAdmin)
