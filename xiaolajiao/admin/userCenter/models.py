@@ -31,6 +31,7 @@ class GrowingType(models.Model):
     def __unicode__(self):
         return unicode(self.name)
 
+
 class GrowthPoints(models.Model):
     growthPointsId = models.AutoField(primary_key=True)  # Field name made lowercase.
     growingTypeId = models.ForeignKey(GrowingType,db_column='growingTypeId',verbose_name=u"") #models.IntegerField()  # Field name made lowercase.

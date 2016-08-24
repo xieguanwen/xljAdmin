@@ -137,8 +137,9 @@ INSTALLED_APPS = (
     'crispy_forms',
     'ckeditor',
     'xadmin',
-    'xiaolajiao.admin.logistics',
-    'xiaolajiao.admin.order',
+    "xiaolajiao.admin.userCenter"
+    # 'xiaolajiao.admin.logistics',
+    # 'xiaolajiao.admin.order',
     # 'api',
 )
 TEMPLATE_DIRS = (
