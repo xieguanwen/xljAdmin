@@ -1275,3 +1275,7 @@ msgstr "现在"
 #: xiaolajiao.admin.userCenter
 msgid "growing type name"
 msgstr "生长分类"
+
+#: xiaolajiao.admin.userCenter
+msgid "Growing types"
+msgstr "生长分类"
