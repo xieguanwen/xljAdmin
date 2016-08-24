@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from django.db import models
+from django.utils.translation import ugettext_lazy as _
 
 class Growing(models.Model):
     growingId = models.AutoField(primary_key=True,verbose_name="成长编号")  # Field name made lowercase.
@@ -12,6 +13,7 @@ class Growing(models.Model):
     class Meta:
         managed = False
         db_table = 'growing'
+
 
     def __unicode__(self):
         return self.growingId
@@ -27,6 +29,8 @@ class GrowingType(models.Model):
     class Meta:
         managed = False
         db_table = 'growing_type'
+        verbose_name = _('growing type name')
+        verbose_name_plural = _('growing type name')
 
     def __unicode__(self):
         return unicode(self.name)
