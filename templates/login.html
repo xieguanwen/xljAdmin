@@ -10,8 +10,7 @@
 <script type="text/javascript">
     $(function () {
         $.get('http://192.168.1.180:8000/login/',function (data) {
-            var inputHtml = $("#login").html(data).find("input");
-            console.log(inputHtml.find('input[name="csrfmiddlewaretoken"]').val());
+            console.log($("#login").html(data).find('input[name="csrfmiddlewaretoken"]').val());
         });
     });
 
