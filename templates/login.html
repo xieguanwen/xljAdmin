@@ -9,8 +9,14 @@
 {% vendor 'jquery.js' %}
 <script type="text/javascript">
     $(function () {
-        $.get('http://192.168.1.180:8000/login/',function (data) {
-            console.log($("#login").html(data).find('input[name="csrfmiddlewaretoken"]').val());
+        $.get('/login/',function (data) {
+            var csrfmiddlewaretoken,username,password;
+            csrfmiddlewaretoken = $("#login").html(data).find('input[name="csrfmiddlewaretoken"]').val();
+            username = "xieguanwen@gmail.com";
+            password = "xie123xie";
+            $.post('/login/',{"csrfmiddlewaretoken":csrfmiddlewaretoken,"username":username,"password":password},function (data) {
+                console.log(data);
+            });
         });
     });
 
