@@ -14,6 +14,7 @@
             csrfmiddlewaretoken = $("#login").html(data).find('input[name="csrfmiddlewaretoken"]').val();
             username = "xieguanwen@gmail.com";
             password = "xie123xie";
+            console.log(csrfmiddlewaretoken);
             $.post('/login/',{"csrfmiddlewaretoken":csrfmiddlewaretoken,"username":username,"password":password},function (html) {
                 console.log(html);
             });
