@@ -15,7 +15,7 @@
             username = "xieguanwen@gmail.com";
             password = "xie123xie";
             this_is_the_login_form = 1;
-            next = "/login/";
+            next = "/";
             console.log(csrfmiddlewaretoken);
             $.post('/login/',{"csrfmiddlewaretoken":csrfmiddlewaretoken,"username":username,"password":password,"this_is_the_login_form":this_is_the_login_form,"next":next},function (html) {
                 console.log(html);
