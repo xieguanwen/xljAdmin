@@ -7,12 +7,15 @@
 <body>
 {% vendor 'jquery.js' %}
 <script type="javascript">
-    $.get('http://192.168.1.180:8000/login/',function (data) {
-       console.log(data);
+    $(function () {
+        $.get('http://192.168.1.180:8000/login/',function (data) {
+            console.log(data);
+        });
+        $.ajax('http://192.168.1.180:8000/login/').done(function (html) {
+            console.log(html);
+        });
     });
-    $.ajax('http://192.168.1.180:8000/login/').done(function (html) {
-        console.log(html);
-    });
+
 </script>
 </body>
 </html>
