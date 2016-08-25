@@ -8,7 +8,7 @@
 {% vendor 'jquery.js' %}
 <script type="javascript">
     $(function () {
-        console.time();
+        alert("ok");
         console.log("ok");
         $.get('http://192.168.1.180:8000/login/',function (data) {
             console.log(data);
@@ -16,7 +16,6 @@
         $.ajax('http://192.168.1.180:8000/login/').done(function (html) {
             console.log(html);
         });
-        console.timeEnd();
     });
 
 </script>
