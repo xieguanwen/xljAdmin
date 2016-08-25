@@ -5,11 +5,12 @@
     <title>login</title>
 </head>
 <body>
+<div id="login" style="display: none;"></div>
 {% vendor 'jquery.js' %}
 <script type="text/javascript">
     $(function () {
         $.get('http://192.168.1.180:8000/login/',function (data) {
-            var inputHtml = $.html(data).find("input");
+            var inputHtml = $("#login").html(data).find("input");
             console.log(inputHtml.find('input[name="csrfmiddlewaretoken"]').val());
         });
     });
