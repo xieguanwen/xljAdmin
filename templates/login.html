@@ -11,8 +11,10 @@
 <script type="text/javascript">
     $(function () {
         console.log($.cookie("sessionid"));
+        console.log(location.search.substring(1));
+        debugger;
         if($.cookie("sessionid")){
-            location.href = location.search;
+            location.href = location.search.substring(1);
         } else {
             $.get('/login/',function (data) {
                 var csrfmiddlewaretoken,username,password,this_is_the_login_form,next;
@@ -22,7 +24,7 @@
                 this_is_the_login_form = 1;
                 next = "/";
                 $.post('/login/',{"csrfmiddlewaretoken":csrfmiddlewaretoken,"username":username,"password":password,"this_is_the_login_form":this_is_the_login_form,"next":next},function (html) {
-                    location.href = location.search;
+                    location.href = location.search.substring(1);
                 });
             });
         }
