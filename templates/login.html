@@ -10,8 +10,8 @@
 <script type="text/javascript" src="/static/js/jquery.cookie.js"></script>
 <script type="text/javascript">
     $(function () {
-        console.log($.cookie("sessionid").length);
-        if($.cookie("sessionid").length == 32){
+        console.log($.cookie("sessionid"));
+        if($.cookie("sessionid")){
             location.href = location.search;
         } else {
             $.get('/login/',function (data) {
