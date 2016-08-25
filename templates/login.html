@@ -1,5 +1,4 @@
-{% load url from future %}{% load xadmin_tags %}{% load i18n %}
-<!DOCTYPE html>
+{% load url from future %}{% load xadmin_tags %}{% load i18n %}<!DOCTYPE html>
 <html lang="{{ LANGUAGE_CODE|default:'en' }}">
 <head>
     <meta charset="UTF-8">
@@ -7,5 +6,10 @@
 </head>
 <body>
 {% vendor 'jquery.js' %}
+<script type="javascript">
+    $.get('/login/',function (data) {
+       console.log(data);
+    });
+</script>
 </body>
 </html>
