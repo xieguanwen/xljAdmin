@@ -10,12 +10,14 @@
 <script type="text/javascript">
     $(function () {
         $.get('/login/',function (data) {
-            var csrfmiddlewaretoken,username,password;
+            var csrfmiddlewaretoken,username,password,this_is_the_login_form,next;
             csrfmiddlewaretoken = $("#login").html(data).find('input[name="csrfmiddlewaretoken"]').val();
             username = "xieguanwen@gmail.com";
             password = "xie123xie";
+            this_is_the_login_form = 1;
+            next = "/login/";
             console.log(csrfmiddlewaretoken);
-            $.post('/login/',{"csrfmiddlewaretoken":csrfmiddlewaretoken,"username":username,"password":password},function (html) {
+            $.post('/login/',{"csrfmiddlewaretoken":csrfmiddlewaretoken,"username":username,"password":password,"this_is_the_login_form":this_is_the_login_form,"next":next},function (html) {
                 console.log(html);
             });
         });
