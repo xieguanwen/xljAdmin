@@ -131,6 +131,7 @@ class Welfare(models.Model):
         return unicode(self.name)
 
 class RankWelfare(models.Model):
+    rankWelfareId = models.AutoField(primary_key=True,verbose_name="编号")
     rankTypeId = models.ForeignKey(RankType,db_column="rankTypeId",verbose_name="会员等级类型")  # Field name made lowercase.
     welfareId = models.ForeignKey(Welfare,db_column="welfareId",verbose_name="福利编号")  # Field name made lowercase.
 

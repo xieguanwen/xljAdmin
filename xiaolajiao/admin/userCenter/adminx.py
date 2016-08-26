@@ -42,7 +42,7 @@ class RankTypeAdmin(object):
 xadmin.site.register(RankType,RankTypeAdmin)
 
 class RankWelfareAdmin(object):
-    list_display = ('rankTypeId','welfareId')
+    list_display = ('rankWelfareId','rankTypeId','welfareId')
     list_display_links = ('rankTypeId',)
 
     # list_search = ('')

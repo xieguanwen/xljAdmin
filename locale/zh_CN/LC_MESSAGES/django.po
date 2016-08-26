@@ -1277,5 +1277,33 @@ msgid "growing type name"
 msgstr "生长分类"
 
 #: xiaolajiao.admin.userCenter
-msgid "Growing types"
-msgstr "生长分类"
+msgid "growing name"
+msgstr "成长管理"
+
+#: xiaolajiao.admin.userCenter
+msgid "growth points name"
+msgstr "成长分记录"
+
+#: xiaolajiao.admin.userCenter
+msgid "rank type name"
+msgstr "成长类型"
+
+#: xiaolajiao.admin.userCenter
+msgid "member benefits name"
+msgstr "会员优惠"
+
+#: xiaolajiao.admin.userCenter
+msgid "sign record name"
+msgstr "会员签到记录"
+
+#: xiaolajiao.admin.userCenter
+msgid "vip rank name"
+msgstr "新会员等级"
+
+#: xiaolajiao.admin.userCenter
+msgid "welfare name"
+msgstr "会员福利"
+
+#: xiaolajiao.admin.userCenter
+msgid "rank welfare name"
+msgstr "会员等级福利"
